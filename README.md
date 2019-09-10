@@ -1,24 +1,34 @@
-# README
+*自分が苦労した点*  
+・変数がはじめはなんのことかわからず、どういったロジックで使われているのか、
+tutorialでもこの課題中でもなんとなくの理解で終わってしまった。  
+・テストに関しては、rails serverではちゃんと実装されているのにテストではうまく行かないということが頻発した。
+また、良いね機能を実装してから全てのテストがuniquenessに引っかかりエラーになった。修正しようにも難しかった為、
+今回は諦めた。  
+・自己解決がほとんどできなかった。  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+*学んだ点*  
+・全力で調べ、時間を決め、解決できなかったら聞く。その過程で、エラーの解決パターンを学習し、
+次のエラーに活かせるようになりたいと思う。  
+・自己解決能力も以前よりはついた。まだ自分で解決できることなどほとんどないが、少なくとも成長はしたと感じる。  
+・基礎がまだまだ足りないと感じた。確かにプログラミングはアウトプットが大切で、その中で学んでいく過程がいいのだと思うが、
+少なくとも、PRをしている間などでtutorialをもう一度見直してみたい。  
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+*自慢したい点*  
+・まずは、正直心が何ども折れかけたが、結局踏みとどまりサブ課題を提出するまでできたという事。
+・テストは全て壊れたが、自分でイイね機能を実装できた事。
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*相談したい点*  
+・いいね機能を実装した時点で、テストが全てエラーになってしまう。
+UsersProfileTest#test_profile_display:
+ActiveRecord::RecordNotUnique: SQLite3::ConstraintException: columns user_id, micropost_id are not unique:
+INSERT INTO "likes" ("user_id", "micropost_id", "created_at", "updated_at", "id") 
+VALUES (1, 1, '2019-09-09 01:15:36.357574', '2019-09-09 01:15:36.357574', 298486374)  
+などのエラーメッセージがあり、ほぼ全てのエラーメッセージにて、user_id,　micropost_idがユニークでは無いと
+書かれています。ですが、何がいけなかったのか、自分ではよくわかりません。
+https://qiita.com/jaramon/items/248bcb4b56e9fed8fc90
+上記の記事を参考にしてイイね機能を実装いたしました。上記の記事のコメントには同じような状況に陥っている方が
+いらっしゃるようでした。
