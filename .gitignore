@@ -37,4 +37,7 @@ lib
 log
 tmp
 vendor
+app/assets/javascripts/account_activations.coffee
+app/assets/javascripts/comments.coffee
+app/assets/javascripts/likes.coffee
 
