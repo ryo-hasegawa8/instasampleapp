@@ -31,10 +31,10 @@
 /config/master.key
 
 #Ignroe in case of PR 
-/jobs
-/application_cable
-/lib
-/log
-/tmp
-/vendor
+jobs
+application_cable
+lib
+log
+tmp
+vendor
 
