@@ -31,13 +31,14 @@
 /config/master.key
 
 #Ignroe in case of PR 
-jobs
-application_cable
-lib
-log
-tmp
-vendor
-app/assets/javascripts/account_activations.coffee
-app/assets/javascripts/comments.coffee
-app/assets/javascripts/likes.coffee
+/jobs/
+/application_cable/
+/lib/
+/log/
+/tmp/
+/vendor/
+/heroku/
+account_activations.coffee
+comments.coffee
+likes.coffee
 
