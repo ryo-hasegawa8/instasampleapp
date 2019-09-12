@@ -41,4 +41,5 @@
 account_activations.coffee
 comments.coffee
 likes.coffee
+/.env
 
