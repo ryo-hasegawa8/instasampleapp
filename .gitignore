@@ -29,3 +29,17 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+#Ignroe in case of PR 
+/jobs/
+/application_cable/
+/lib/
+/log/
+/tmp/
+/vendor/
+/heroku/
+account_activations.coffee
+comments.coffee
+likes.coffee
+/.env
+
